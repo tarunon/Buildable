@@ -10,7 +10,7 @@ extension Array: Buildable {
   }
 }
 
-Array.build {
+[Int].build {
   [1, 2, 3]
   if myCondition {
     [4, 5, 6] 
