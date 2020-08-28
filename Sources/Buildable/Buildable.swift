@@ -8,7 +8,7 @@
 /// Adding FucntionBuilder feature in some Type.
 public protocol Buildable: _Builder {
     static func empty() -> Self
-    static func merge(_ lhs: Self, _ rhs: Self) -> Self
+    func merging(_ other: Self) -> Self
 }
 
 extension Buildable {

@@ -6,8 +6,8 @@ extension Array: Buildable {
         []
     }
 
-    public static func merge(_ lhs: Array, _ rhs: Array) -> Array {
-        lhs + rhs
+    public func merging(_ other: Array) -> Array {
+        self + other
     }
 }
 
